@@ -1,17 +1,21 @@
 aid: i2c
 name: i2c Inc.
-description: 'i2c Inc. is a company surfaced via the API Evangelist harvest backlog (source: payments)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://static-cdn.i2cinc.com/wp-content/uploads/2025/10/i2c-inc-Logo.jpg
+description: 'Outpace legacy and unproven modern platforms with i2c’s next generation platform and composable solutions built for speed, reliability and scale. i2c Inc. provides a comprehensive suite of banking and payments APIs, enabling fintechs and enterprises to integrate core financial services quickly and securely.'
 url: https://raw.githubusercontent.com/api-evangelist/i2c/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:payments
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-21 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-21'
 modified: '2026-09-21'
 tags:
 - Company
+- Banking
+- Payments
+- Fintech
+- API
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +23,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/i2c-llms.txt
+- type: Blog
+  url: https://www.i2cinc.com/blog/
+- type: DomainSecurity
+  url: security/i2c-domain-security.yml
 - type: Website
-  url: https://i2cinc.com/
+  url: https://www.i2cinc.com/
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: "API spec URLs on apis.i2cinc.com return HTML shells instead of machine‑readable OpenAPI documents."
+  evidence:
+    - url: https://apis.i2cinc.com/openapi.json
+      status: 200
+  checked: 2026-09-21
+x-enrichment:
+  date: '2026-09-21'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
