@@ -15,6 +15,11 @@ tags:
 - Banking
 - Payments
 - Fintech
+tags_raw:
+- Company
+- Banking
+- Payments
+- Fintech
 - API
 apis: []
 maintainers:
