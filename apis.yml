@@ -1,5 +1,5 @@
 aid: i2c
-name: i2c Inc.
+name: i2c
 image: https://static-cdn.i2cinc.com/wp-content/uploads/2025/10/i2c-inc-Logo.jpg
 description: 'Outpace legacy and unproven modern platforms with i2c’s next generation platform and composable solutions built for speed, reliability and scale. i2c Inc. provides a comprehensive suite of banking and payments APIs, enabling fintechs and enterprises to integrate core financial services quickly and securely.'
 url: https://raw.githubusercontent.com/api-evangelist/i2c/refs/heads/main/apis.yml
@@ -51,3 +51,4 @@ x-enrichment:
   artifacts_added: 4
   pass: modular-v1
   engine: identity=local,contract=local,surfaces=local,docs=local
+x-legal-name: i2c Inc.
