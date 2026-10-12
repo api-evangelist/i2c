@@ -1,0 +1,31 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/i2c/integrations
+- https://n8n.io/integrations/i2c/
+- https://composio.dev/toolkits/i2c
+- https://monid.ai/tools/i2c
+checked:
+- https://composio.dev/toolkits/i2c
+- https://monid.ai/tools/i2c
+- https://n8n.io/integrations/i2c/
+- https://zapier.com/apps/i2c/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: plaid
+  partner: plaid
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/plaid/blob/main/openapi/plaid-plaid-api-openapi.yml
+  contract_reference:
+    repo: plaid
+    spec_file: plaid-plaid-api-openapi.yml
+    value: i2c
+    property: schemas.ProcessorTokenCreateRequest.processor
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates: []
