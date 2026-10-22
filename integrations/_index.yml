@@ -21,3 +21,54 @@
     detected: '2026-10-12'
   arazzo: i2c-plaid-preconfig.yml
   status: arazzo
+- slug: i2c-bank-of-canada-rpaa-registry-of-payment-service-providers
+  label: Bank of Canada RPAA registry of payment service providers
+  partner_name: Bank of Canada RPAA registry of payment service providers
+  category: Canadian retail payment activities (RPAA) PSP registration
+  type: register
+  channel: regulator-register
+  evidence: https://www.bankofcanada.ca/core-functions/retail-payments-supervision/psp-registry/
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Bank of Canada RPAA registry of payment service providers
+    spec_file: null
+    standard: null
+    role: registered-psp
+    registrations:
+    - registered_name: i2c Inc
+      register_status: registered
+      register_country: US
+      register_id: a5276e3c-bd9a-ef11-8a69-0022483dbf39
+      matched_domain: i2cinc.com
+      matched_by: domain
+      evidence_url: https://www.bankofcanada.ca/core-functions/retail-payments-supervision/psp-registry/psp-registry-details/?account_id=a5276e3c-bd9a-ef11-8a69-0022483dbf39
+      licences:
+      - RPAA registered PSP
+      registration_date: '2026-10-13'
+      head_office_country: United States of America (the)
+      payment_functions:
+      - Authorization or Transmission, Reception or Facilitation of an instruction in relation to an electronic
+        funds transfer
+      has_violations: false
+    - registered_name: i2c Inc
+      register_status: registered
+      register_country: US
+      register_id: 8e4a4836-1a9e-ef11-8a69-6045bd5cb0b5
+      matched_domain: i2cinc.com
+      matched_by: domain
+      evidence_url: https://www.bankofcanada.ca/core-functions/retail-payments-supervision/psp-registry/psp-registry-details/?account_id=8e4a4836-1a9e-ef11-8a69-6045bd5cb0b5
+      licences:
+      - RPAA registered PSP
+      registration_date: '2025-10-29'
+      head_office_country: United States of America (the)
+      payment_functions:
+      - Authorization or Transmission, Reception or Facilitation of an instruction in relation to an electronic
+        funds transfer
+      has_violations: false
+    signal_note: 'participation only: a regulator registration / payment-system membership; no API conformance is
+      published by this register'
+    detected_by: sweep-canada-rpaa-psp-registry.py
+    detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
